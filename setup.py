@@ -8,7 +8,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "End-To-End-MLOPs-Credit_Card_Fraud_Detection"
 AUTHOR_USER_NAME = "rupesh-132"
-SRC_REPO = "Credit Card Fraud Detection"
+SRC_REPO = "Credit_Card_Fraud_Detection"
 AUTHOR_EMAIL = "rupeshkumarzs153@gmail.com"
 
 

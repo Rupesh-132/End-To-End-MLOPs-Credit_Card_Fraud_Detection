@@ -5,7 +5,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
 
-project_name = "Credit Card Fraud Detection"
+project_name = "Credit_Card_Fraud_Detection"
 
 
 list_of_files = [
