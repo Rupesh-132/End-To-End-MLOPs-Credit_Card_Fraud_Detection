@@ -11,7 +11,7 @@ project_name = "Credit_Card_Fraud_Detection"
 list_of_files = [
     ".github/workflows/.gitkeep",
     f"src/{project_name}/__init__.py",
-    f"src/{project_name}/components/__init__.py",
+    f"src/{project_name}/strategies/__init__.py",
     f"src/{project_name}/utils/__init__.py",
     f"src/{project_name}/utils/common.py",
     f"src/{project_name}/config/__init__.py",
