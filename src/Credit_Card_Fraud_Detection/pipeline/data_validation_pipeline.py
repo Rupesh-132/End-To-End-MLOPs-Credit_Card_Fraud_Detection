@@ -18,6 +18,7 @@ class DataValidationPipeline:
             data_validation = DataValidationStrategy(config=data_validation_config)
             data_validation.validate_all_columns()
             data_validation.check_missing_values()
+            data_validation.check_data_types()
         except Exception as e:
             logger.exception(e)
             raise e
