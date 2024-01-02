@@ -1,9 +1,12 @@
 from Credit_Card_Fraud_Detection.constants import *
-from Credit_Card_Fraud_Detection.utils.common import read_yaml,create_directories
-from Credit_Card_Fraud_Detection.entity.config_entity import DataIngestionConfig
+from Credit_Card_Fraud_Detection.utils.common import read_yaml, create_directories
+from Credit_Card_Fraud_Detection.entity.config_entity import DataIngestionConfig,DataValidationConfig
 
 
 class ConfigurationManager:
+    """
+    class for managing all the configurations required for all pipelines strategy
+    """
     def __init__(
             self,
             config_file_path=CONFIG_FILE_PATH,
@@ -19,6 +22,10 @@ class ConfigurationManager:
         create_directories([self.config[0].artifacts_root])
 
     def get_data_ingestion_config(self) -> DataIngestionConfig:
+        """
+        handles the data ingestion configuration
+        :return: DataIngestionConfig
+        """
         config = self.config[0].data_ingestion
         create_directories([config.root_dir])
 
@@ -30,4 +37,23 @@ class ConfigurationManager:
         )
 
         return data_ingestion_config
+
+    def get_data_validation_config(self) -> DataValidationConfig:
+        """
+        Handles the data validation configuration
+        :return: DataValidationConfig
+        """
+        config = self.config[0].data_validation
+        schema = self.schema.COLUMNS
+
+        create_directories([config.root_dir])
+
+        data_validation_config = DataValidationConfig(
+            root_dir=config.root_dir,
+            STATUS_FILE=config.STATUS_FILE,
+            unzip_data_dir=config.unzip_data_dir,
+            all_schema=schema,
+        )
+
+        return data_validation_config
 

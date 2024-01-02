@@ -1,0 +1,64 @@
+import pandas as pd
+from Credit_Card_Fraud_Detection import logger
+from Credit_Card_Fraud_Detection.entity.config_entity import DataValidationConfig
+
+
+class DataValidationStrategy:
+    """
+    class for data validation strategy
+    """
+
+    def __init__(self, config: DataValidationConfig):
+        self.config = config
+        self.validation_report = {}
+
+    def validate_all_columns(self) -> bool:
+        """
+        validates all the columns of the data with the schema defined
+        :return: validation status: True if all columns matches the schema of data
+        """
+        try:
+
+            data = pd.read_csv(self.config.unzip_data_dir)
+
+            all_cols = list(data.columns)
+            logger.info(all_cols)
+
+            all_schema = self.config.all_schema.keys()
+            logger.info(all_schema)
+
+            all_schema_set = set(all_schema)
+            column_validation_status = True  # Set by default as True
+
+            for col in all_cols:
+                if col not in all_schema_set:
+                    validation_status = False
+                    break  # No need to continue checking if validation fails
+
+            self.validation_report["column_validation_status"] = column_validation_status
+
+            # # Write the final validation status
+            # with open(self.config.STATUS_FILE, 'w') as f:
+            #     f.write(f"Column Validation status: {column_validation_status}")
+
+            return column_validation_status
+
+        except Exception as e:
+            raise e
+
+    def check_missing_values(self) -> bool:
+        missing_value_status = False
+        data = pd.read_csv(self.config.unzip_data_dir)
+
+        missing_values = data.isnull().sum()
+        if missing_values.any():
+            missing_value_status = True
+
+        self.validation_report["missing_value_status"] = missing_value_status
+
+        # Write the final validation status
+        with open(self.config.STATUS_FILE, 'w') as f:
+            f.write(f"validation report: {self.validation_report}")
+
+        return missing_value_status
+

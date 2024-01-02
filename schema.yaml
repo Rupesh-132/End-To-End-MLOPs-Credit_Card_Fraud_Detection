@@ -29,8 +29,9 @@ COLUMNS:
     V27: float64
     V28: float64
     Amount: float64
+    Class: int64
 
 
 TARGET_COLUMN:
-  name: quality
+  name: Class
   

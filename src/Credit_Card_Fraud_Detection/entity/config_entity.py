@@ -5,7 +5,7 @@ from pathlib import Path
 @dataclass(frozen=True)
 class DataIngestionConfig:
     """
-    A class for holding an data path
+    data class the configure the data ingestion
     """
     root_dir: Path
     source_URL: str
@@ -13,3 +13,12 @@ class DataIngestionConfig:
     unzip_dir: Path
 
 
+@dataclass(frozen=True)
+class DataValidationConfig:
+    """
+    data class to configure the data validation
+    """
+    root_dir: Path
+    STATUS_FILE: str
+    unzip_data_dir: Path
+    all_schema: dict
