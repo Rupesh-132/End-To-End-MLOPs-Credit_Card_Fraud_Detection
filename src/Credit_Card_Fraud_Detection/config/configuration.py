@@ -1,6 +1,6 @@
 from Credit_Card_Fraud_Detection.constants import *
 from Credit_Card_Fraud_Detection.utils.common import read_yaml, create_directories
-from Credit_Card_Fraud_Detection.entity.config_entity import DataIngestionConfig,DataValidationConfig
+from Credit_Card_Fraud_Detection.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig
 
 
 class ConfigurationManager:
@@ -56,4 +56,16 @@ class ConfigurationManager:
         )
 
         return data_validation_config
+
+    def get_data_transformation_config(self) -> DataTransformationConfig:
+        config = self.config[0].data_transformation
+
+        create_directories([config.root_dir])
+
+        data_transformation_config = DataTransformationConfig(
+            root_dir=config.root_dir,
+            data_path=config.data_path,
+        )
+
+        return data_transformation_config
 

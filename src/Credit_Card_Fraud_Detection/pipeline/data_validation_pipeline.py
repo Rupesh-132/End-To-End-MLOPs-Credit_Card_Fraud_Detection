@@ -27,8 +27,8 @@ class DataValidationPipeline:
 if __name__ == "__main__":
     try:
         logger.info(f">>>>>>> Strategy {STRATEGY_NAME} started <<<<<<<<<<<")
-        data_ingestion_pipeline = DataValidationPipeline()
-        data_ingestion_pipeline.main()
+        data_validation_pipeline = DataValidationPipeline()
+        data_validation_pipeline.main()
         logger.info(f">>>>>>> Strategy {STRATEGY_NAME} completed <<<<<<<<<<< \n \nx=========x")
 
     except Exception as e:
