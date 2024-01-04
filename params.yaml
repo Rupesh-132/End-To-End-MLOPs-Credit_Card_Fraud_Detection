@@ -1,1 +1,4 @@
-key: value
+RandomForestClassifier:
+  n_estimators : 50
+  criterion: "gini"
+  bootstrap: False

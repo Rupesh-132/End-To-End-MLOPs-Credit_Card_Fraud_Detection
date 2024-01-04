@@ -1,6 +1,6 @@
 from Credit_Card_Fraud_Detection.constants import *
 from Credit_Card_Fraud_Detection.utils.common import read_yaml, create_directories
-from Credit_Card_Fraud_Detection.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig
+from Credit_Card_Fraud_Detection.entity.config_entity import DataIngestionConfig,DataValidationConfig, DataTransformationConfig,ModelTrainerConfig
 
 
 class ConfigurationManager:
@@ -58,6 +58,10 @@ class ConfigurationManager:
         return data_validation_config
 
     def get_data_transformation_config(self) -> DataTransformationConfig:
+        """
+        Handles data transformation configuration
+        :return: DataTransformationConfig configuration
+        """
         config = self.config[0].data_transformation
 
         create_directories([config.root_dir])
@@ -68,4 +72,29 @@ class ConfigurationManager:
         )
 
         return data_transformation_config
+
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
+        """
+        handles the configuration of model training
+        :return:ModelTrainerConfig
+        """
+        config = self.config[0].model_trainer
+        schema = self.schema.TARGET_COLUMN
+        param = self.params[0].RandomForestClassifier
+
+        create_directories([config.root_dir])
+
+        model_trainer_config = ModelTrainerConfig(
+            root_dir=config.root_dir,
+            train_data_path=config.train_data_path,
+            test_data_path=config.test_data_path,
+            model_name=config.model_name,
+            n_estimators=param.n_estimators,
+            criterion=param.criterion,
+            bootstrap=param.bootstrap,
+            target_column=schema.name
+
+        )
+
+        return model_trainer_config
 
