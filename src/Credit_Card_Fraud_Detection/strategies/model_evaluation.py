@@ -69,7 +69,7 @@ class ModelEvaluationStrategy:
             mlflow.log_metric("precision", precision)
             mlflow.log_metric("recall_score", recall)
             mlflow.log_metric("f1_score", f1)
-            mlflow.log_metric("matthews_corrcoef", matthews_corr)
+            mlflow.log_metric("matthews_corr", matthews_corr)
 
             # Model registry does not work with file store
             if tracking_url_type_store != "file":

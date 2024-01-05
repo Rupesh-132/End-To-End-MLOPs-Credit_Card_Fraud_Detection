@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rupeshyadav/Documents/MLFLOW/End-To-End-MLOPs-Credit_Card_Fraud_Detection/mlruns/0/ec64e43695c241e8b505b030fd8ff16c/artifacts
+end_time: 1704435314830
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ec64e43695c241e8b505b030fd8ff16c
+run_name: unequaled-bee-691
+run_uuid: ec64e43695c241e8b505b030fd8ff16c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704435312043
+status: 3
+tags: []
+user_id: rupeshyadav

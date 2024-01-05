@@ -24,8 +24,8 @@ class ModelTrainerPipeline:
 if __name__ == "__main__":
     try:
         logger.info(f">>>>>>> Strategy {STRATEGY_NAME} started <<<<<<<<<<<")
-        data_ingestion_pipeline = ModelTrainerPipeline()
-        data_ingestion_pipeline.main()
+        model_trainer_pipeline = ModelTrainerPipeline()
+        model_trainer_pipeline.main()
         logger.info(f">>>>>>> Strategy {STRATEGY_NAME} completed <<<<<<<<<<< \n \nx=========x")
 
     except Exception as e:

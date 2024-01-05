@@ -48,8 +48,8 @@ STRATEGY_NAME = "Model Trainer"
 
 try:
     logger.info(f">>>>>>> Strategy {STRATEGY_NAME} started <<<<<<<<<<<")
-    data_transformation_pipeline = ModelTrainerPipeline()
-    data_transformation_pipeline.main()
+    model_trainer_pipeline = ModelTrainerPipeline()
+    model_trainer_pipeline.main()
     logger.info(f">>>>>>> Strategy {STRATEGY_NAME} completed <<<<<<<<<<< \n \nx=========x")
 
 except Exception as e:
@@ -60,8 +60,8 @@ STRATEGY_NAME = "Model Evaluation"
 
 try:
     logger.info(f">>>>>>> Strategy {STRATEGY_NAME} started <<<<<<<<<<<")
-    data_transformation_pipeline = ModelEvaluationPipeline()
-    data_transformation_pipeline.main()
+    model_evaluation_pipeline = ModelEvaluationPipeline()
+    model_evaluation_pipeline.main()
     logger.info(f">>>>>>> Strategy {STRATEGY_NAME} completed <<<<<<<<<<< \n \nx=========x")
 
 except Exception as e:
