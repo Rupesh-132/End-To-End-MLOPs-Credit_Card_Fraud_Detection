@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rupeshyadav/Documents/MLFLOW/End-To-End-MLOPs-Credit_Card_Fraud_Detection/mlruns/0/06b3b553c25f45c2951196b5ab077dc5/artifacts
+end_time: 1704451393862
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 06b3b553c25f45c2951196b5ab077dc5
+run_name: judicious-smelt-82
+run_uuid: 06b3b553c25f45c2951196b5ab077dc5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704451390516
+status: 3
+tags: []
+user_id: rupeshyadav
