@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rupeshyadav/Documents/MLFLOW/End-To-End-MLOPs-Credit_Card_Fraud_Detection/mlruns/0/fa548f04f5144108a172c82e92a33e83/artifacts
+end_time: 1704429105856
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fa548f04f5144108a172c82e92a33e83
+run_name: unruly-horse-771
+run_uuid: fa548f04f5144108a172c82e92a33e83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704429102254
+status: 3
+tags: []
+user_id: rupeshyadav

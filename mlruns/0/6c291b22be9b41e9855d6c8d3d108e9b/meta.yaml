@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rupeshyadav/Documents/MLFLOW/End-To-End-MLOPs-Credit_Card_Fraud_Detection/mlruns/0/6c291b22be9b41e9855d6c8d3d108e9b/artifacts
+end_time: 1704434668534
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6c291b22be9b41e9855d6c8d3d108e9b
+run_name: awesome-seal-228
+run_uuid: 6c291b22be9b41e9855d6c8d3d108e9b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704434665599
+status: 3
+tags: []
+user_id: rupeshyadav

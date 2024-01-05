@@ -1,4 +1,4 @@
 RandomForestClassifier:
-  n_estimators : 50
+  n_estimators : 100
   criterion: "gini"
-  bootstrap: False
+  bootstrap: True
