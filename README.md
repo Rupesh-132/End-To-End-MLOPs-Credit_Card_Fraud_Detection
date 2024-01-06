@@ -116,19 +116,19 @@ export MLFLOW_TRACKING_PASSWORD=d0abd907d6e7b5b15f194e16de7c132a9ef9cdef
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
--(search-EC2-service for virtual machine - Click on Launch instance)
--(give name)
--(select-Ubuntu)
--(select-instance type- for this project-t2.large is sufficient)
--(create-key-pair-give name-with default settings)
--(From network settings-check all boxes)
--(keep configuration size at least 32 GiB)
--(Click on Launch instance)
--(After instance creation click on View all Instances)
--(click on instance id)
--(click on connect button-keep the default settings and click on connect)
--(you can see one terminal opening)
--(Now proceed to step-5 and install all the dependencies)
+    -(search-EC2-service for virtual machine - Click on Launch instance)
+    -(give name)
+    -(select-Ubuntu)
+    -(select-instance type- for this project-t2.large is sufficient)
+    -(create-key-pair-give name-with default settings)
+    -(From network settings-check all boxes)
+    -(keep configuration size at least 32 GiB)
+    -(Click on Launch instance)
+    -(After instance creation click on View all Instances)
+    -(click on instance id)
+    -(click on connect button-keep the default settings and click on connect)
+    -(you can see one terminal opening)
+    -(Now proceed to step-5 and install all the dependencies)
 
 ## 5. Open EC2 and Install docker in EC2 Machine:
 
