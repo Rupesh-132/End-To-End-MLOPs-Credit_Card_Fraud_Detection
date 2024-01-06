@@ -5,6 +5,7 @@ import pandas as pd
 from Credit_Card_Fraud_Detection.pipeline.prediction_pipeline import PredictionPipeline
 import numpy as np
 
+
 def main():
 
     st.title("CREDIT CARD FRAUD DETECTION")
