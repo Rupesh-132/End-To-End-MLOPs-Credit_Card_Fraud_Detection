@@ -7,15 +7,7 @@ Clone the repository
 ```bash
 https://github.com/Rupesh-132/End-To-End-MLOPs-Credit_Card_Fraud_Detection
 ```
-### STEP 01- Create a conda environment after opening the repository
-
-```bash
-conda create -n mlproj python=3.8 -y
-```
-
-```bash
-conda activate mlproj
-```
+### STEP 01- Create a virtual environment after opening the repository
 
 
 ### STEP 02- install the requirements
