@@ -1,16 +1,4 @@
 
-## Workflows : Follow the below steps while wrting the code for each modul this is make it look very easy.
-1. Update config.yaml
-2. Update schema.yaml
-3. update params.yaml
-4. update the entity
-5. update the configuration manager in src config
-6. update the strategies
-7. update the pipeline
-8. update the main.py
-9. update the app.py
-
-
 # How to run?
 ### STEPS:
 
@@ -183,4 +171,18 @@ MLflow
  - Its Production Grade
  - Trace all of your expriements
  - Logging & tagging your model
+
+- If you want to create your own project you can follow the below workflow to write your custom code.
+## Workflows : Follow the below steps while wrting the code for each modul this is make it look very easy.
+1. Update config.yaml
+2. Update schema.yaml
+3. update params.yaml
+4. update the entity
+5. update the configuration manager in src config
+6. update the strategies
+7. update the pipeline
+8. update the main.py
+9. update the app.py
+
+
 
