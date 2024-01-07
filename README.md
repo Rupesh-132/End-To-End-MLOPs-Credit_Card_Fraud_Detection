@@ -1,5 +1,5 @@
 
-# How to run?
+## How to run?
 ### STEPS:
 
 Clone the repository
@@ -66,7 +66,7 @@ export MLFLOW_TRACKING_PASSWORD=d0abd907d6e7b5b15f194e16de7c132a9ef9cdef
 
 
 
-# AWS-CICD-Deployment-with-Github-Actions
+## AWS-CICD-Deployment-with-Github-Actions
 
 ## 1. Login to AWS console.
 
@@ -137,7 +137,7 @@ export MLFLOW_TRACKING_PASSWORD=d0abd907d6e7b5b15f194e16de7c132a9ef9cdef
     Now proceed to step-6
 	newgrp docker
 	
-# 6. Configure EC2 as self-hosted runner:
+## 6. Configure EC2 as self-hosted runner:
     Go to your project on Github
     setting>actions>runner>new self hosted runner> choose os(linux for current proj)> then run all the commands one by one in AWS command line
     - Press enter for default
