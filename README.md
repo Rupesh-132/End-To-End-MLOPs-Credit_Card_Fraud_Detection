@@ -1,6 +1,5 @@
-# End-To-End-MLOPs-Credit_Card_Fraud_Detection
 
-## Workflows
+## Workflows : Follow the below steps while wrting the code for each modul this is make it look very easy.
 1. Update config.yaml
 2. Update schema.yaml
 3. update params.yaml
@@ -57,12 +56,12 @@ open up you local host and port
 ##### cmd
 - mlflow ui
 
-### dagshub
+### dagshub : Add your dagshub credentials here.
 [dagshub](https://dagshub.com/)
 
-MLFLOW_TRACKING_URI=https://dagshub.com/Rupesh-132/End-To-End-MLOPs-Credit_Card_Fraud_Detection.mlflow \
-MLFLOW_TRACKING_USERNAME=Rupesh-132 \
-MLFLOW_TRACKING_PASSWORD=d0abd907d6e7b5b15f194e16de7c132a9ef9cdef \
+MLFLOW_TRACKING_URI=
+MLFLOW_TRACKING_USERNAME=
+MLFLOW_TRACKING_PASSWORD=
 python script.py
 
 Run this to export as env variables:
