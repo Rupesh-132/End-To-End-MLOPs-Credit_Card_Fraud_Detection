@@ -1,4 +1,5 @@
 
+<img width="1433" alt="Screenshot 2024-01-08 at 9 11 07 AM" src="https://github.com/Rupesh-132/End-To-End-MLOPs-Credit_Card_Fraud_Detection/assets/79595858/0453de4d-fc0f-419f-b4e0-ce63d5ca7643">
 ## How to run?
 ### STEPS:
 
