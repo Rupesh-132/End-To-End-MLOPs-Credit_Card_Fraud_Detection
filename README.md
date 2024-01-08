@@ -28,15 +28,6 @@ open up you local host and port
 ```
 
 
-
-## MLflow
-
-[Documentation](https://mlflow.org/docs/latest/index.html)
-
-
-##### cmd
-- mlflow ui
-
 ### dagshub : Add your dagshub credentials here.
 [dagshub](https://dagshub.com/)
 
