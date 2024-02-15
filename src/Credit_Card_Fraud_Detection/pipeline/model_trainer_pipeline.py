@@ -1,6 +1,6 @@
-from Credit_Card_Fraud_Detection.strategies.model_trainer import ModelTrainerStrategy
-from Credit_Card_Fraud_Detection.config.configuration import ConfigurationManager
-from Credit_Card_Fraud_Detection import logger
+from src.Credit_Card_Fraud_Detection.strategies.model_trainer import ModelTrainerStrategy
+from src.Credit_Card_Fraud_Detection.config.configuration import ConfigurationManager
+from src.Credit_Card_Fraud_Detection import logger
 
 STRATEGY_NAME = "Model Trainer"
 

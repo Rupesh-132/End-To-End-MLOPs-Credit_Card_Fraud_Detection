@@ -1,9 +1,9 @@
 import pandas as pd
 import os
-from Credit_Card_Fraud_Detection import logger
+from src.Credit_Card_Fraud_Detection import logger
 from sklearn.ensemble import RandomForestClassifier
 import joblib
-from Credit_Card_Fraud_Detection.entity.config_entity import ModelTrainerConfig
+from src.Credit_Card_Fraud_Detection.entity.config_entity import ModelTrainerConfig
 
 
 class ModelTrainerStrategy:

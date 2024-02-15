@@ -1,7 +1,7 @@
 import os
 from box.exceptions import BoxValueError
 import yaml
-from Credit_Card_Fraud_Detection import logger
+from src.Credit_Card_Fraud_Detection import logger
 import json
 import joblib
 from ensure import ensure_annotations

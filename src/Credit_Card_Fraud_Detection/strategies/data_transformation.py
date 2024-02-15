@@ -1,8 +1,8 @@
 import os
-from Credit_Card_Fraud_Detection import logger
+from src.Credit_Card_Fraud_Detection import logger
 from sklearn.model_selection import train_test_split
 import pandas as pd
-from Credit_Card_Fraud_Detection.entity.config_entity import DataTransformationConfig
+from src.Credit_Card_Fraud_Detection.entity.config_entity import DataTransformationConfig
 
 
 class DataTransformationStrategy:

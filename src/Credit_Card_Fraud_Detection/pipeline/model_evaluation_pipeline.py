@@ -1,7 +1,7 @@
 
-from Credit_Card_Fraud_Detection.config.configuration import ConfigurationManager
-from Credit_Card_Fraud_Detection import logger
-from Credit_Card_Fraud_Detection.strategies.model_evaluation import ModelEvaluationStrategy
+from src.Credit_Card_Fraud_Detection.config.configuration import ConfigurationManager
+from src.Credit_Card_Fraud_Detection import logger
+from src.Credit_Card_Fraud_Detection.strategies.model_evaluation import ModelEvaluationStrategy
 
 STRATEGY_NAME = "Model Evaluation"
 

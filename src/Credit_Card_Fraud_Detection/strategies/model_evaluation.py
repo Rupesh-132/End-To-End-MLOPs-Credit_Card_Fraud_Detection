@@ -6,8 +6,8 @@ import mlflow
 import mlflow.sklearn
 import numpy as np
 import joblib
-from Credit_Card_Fraud_Detection.utils.common import save_json
-from Credit_Card_Fraud_Detection.entity.config_entity import ModelEvaluationConfig
+from src.Credit_Card_Fraud_Detection.utils.common import save_json
+from src.Credit_Card_Fraud_Detection.entity.config_entity import ModelEvaluationConfig
 from pathlib import Path
 
 

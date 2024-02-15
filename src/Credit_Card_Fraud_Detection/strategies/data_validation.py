@@ -1,6 +1,6 @@
 import pandas as pd
-from Credit_Card_Fraud_Detection import logger
-from Credit_Card_Fraud_Detection.entity.config_entity import DataValidationConfig
+from src.Credit_Card_Fraud_Detection import logger
+from src.Credit_Card_Fraud_Detection.entity.config_entity import DataValidationConfig
 
 
 class DataValidationStrategy:

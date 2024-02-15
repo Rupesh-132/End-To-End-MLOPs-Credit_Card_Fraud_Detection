@@ -1,6 +1,6 @@
-from Credit_Card_Fraud_Detection.strategies.data_validation import DataValidationStrategy
-from Credit_Card_Fraud_Detection.config.configuration import ConfigurationManager
-from Credit_Card_Fraud_Detection import logger
+from src.Credit_Card_Fraud_Detection.strategies.data_validation import DataValidationStrategy
+from src.Credit_Card_Fraud_Detection.config.configuration import ConfigurationManager
+from src.Credit_Card_Fraud_Detection import logger
 
 STRATEGY_NAME = "Data Validation"
 

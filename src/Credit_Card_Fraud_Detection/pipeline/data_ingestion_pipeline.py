@@ -1,6 +1,6 @@
-from Credit_Card_Fraud_Detection.strategies.data_ingestion import DataIngestionStrategy
-from Credit_Card_Fraud_Detection.config.configuration import ConfigurationManager
-from Credit_Card_Fraud_Detection import logger
+from src.Credit_Card_Fraud_Detection.strategies.data_ingestion import DataIngestionStrategy
+from src.Credit_Card_Fraud_Detection.config.configuration import ConfigurationManager
+from src.Credit_Card_Fraud_Detection import logger
 
 STRATEGY_NAME = "Data Ingestion"
 

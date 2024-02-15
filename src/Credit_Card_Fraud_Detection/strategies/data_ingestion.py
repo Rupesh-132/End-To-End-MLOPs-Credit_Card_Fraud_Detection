@@ -1,9 +1,9 @@
 import os
 import urllib.request as request
 import zipfile
-from Credit_Card_Fraud_Detection import logger
-from Credit_Card_Fraud_Detection.utils.common import get_size
-from Credit_Card_Fraud_Detection.entity.config_entity import DataIngestionConfig
+from src.Credit_Card_Fraud_Detection import logger
+from src.Credit_Card_Fraud_Detection.utils.common import get_size
+from src.Credit_Card_Fraud_Detection.entity.config_entity import DataIngestionConfig
 from pathlib import Path
 
 

@@ -1,6 +1,6 @@
-from Credit_Card_Fraud_Detection.constants import *
-from Credit_Card_Fraud_Detection.utils.common import read_yaml, create_directories
-from Credit_Card_Fraud_Detection.entity.config_entity import DataIngestionConfig,DataValidationConfig, DataTransformationConfig,ModelTrainerConfig,ModelEvaluationConfig
+from src.Credit_Card_Fraud_Detection.constants import *
+from src.Credit_Card_Fraud_Detection.utils.common import read_yaml, create_directories
+from src.Credit_Card_Fraud_Detection.entity.config_entity import DataIngestionConfig,DataValidationConfig, DataTransformationConfig,ModelTrainerConfig,ModelEvaluationConfig
 
 
 class ConfigurationManager:
